@@ -31,8 +31,8 @@
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
-                <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                <span class="navbar-text" id="loginText">
+                    <a id="loginModalBtn">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -44,7 +44,7 @@
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Reserve a Table</h4>
+                    <h4 class="modal-title"><strong>Reserve a Table</strong></h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -177,7 +177,7 @@
                     <img src="img/logo.png" class="img-fluid">                    
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a role="button" data-toggle="modal" data-target="#reserveModal" class="btn btn-block nav-link btn-warning">
+                    <a id="reserveModalBtn" role="button" class="btn btn-block nav-link btn-warning">
                         Reserve Table
                     </a>
                 </div>
@@ -390,10 +390,10 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- jQuery para habilitar tooltip -->
     <script>
         $(document).ready(function(){
             $("#mycarousel").carousel( { interval: 2000 } );
+
             $("#carouselButton").click(function(){
                 if ($("#carouselButton").children("span").hasClass('fa-pause')) {
                     $("#mycarousel").carousel('pause');
@@ -405,6 +405,14 @@
                     $("#carouselButton").children("span").removeClass('fa-play');
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
+            });
+
+            $("#reserveModalBtn").click(function(){
+                $('#reserveModal').modal('show');
+            });
+            
+            $("#loginModalBtn").click(function(){
+                $('#loginModal').modal('show');
             });
         });
     </script>

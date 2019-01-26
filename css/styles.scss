@@ -73,3 +73,24 @@ body{
     position: absolute;
     bottom: 0px;
 }
+
+#loginText {
+    cursor: pointer;
+}
+
+div{
+    [class="modal-header"]{
+        background-color: $background-dark;
+        color: floralwhite;
+    }
+
+    [class="modal-body"]{
+        background-color: $background-pale;
+    }
+    
+}
+
+.close {
+    color: $background-pale; 
+    opacity: 1;
+}

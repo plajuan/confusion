@@ -51,3 +51,19 @@ body {
   right: 0px;
   position: absolute;
   bottom: 0px; }
+
+#loginText {
+  cursor: pointer; }
+
+div [class="modal-header"] {
+  background-color: #512DA8; 
+  color: floralwhite;
+}
+
+div [class="modal-body"] {
+  background-color: #D1C4E9; }
+
+.close {
+    color: #D1C4E9; 
+    opacity: 1;
+}
