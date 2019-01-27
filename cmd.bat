@@ -10,3 +10,7 @@ lessc styles.less styles.css
 
 //executar este comando sempre que o CSS for alterado
  npm run scss
+
+ //Não precisa mais rodar o comando acima.
+ //package.json agora vai rodar automaticamente usando o onchange
+ npm install --save-dev onchange@3.3.0 parallelshell@3.0.2^C
