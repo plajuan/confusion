@@ -56,7 +56,8 @@
     "usemin-cli": "^0.5.1",
     "axios": ">=0.18.1",
     "lodash": ">=4.17.13",
-    "set-value": ">=2.0.1"
+    "set-value": ">=2.0.1",
+    "lodash.template": ">=4.5.0"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
@@ -68,6 +69,7 @@
     "popper.js": "^1.12.9",
     "axios": ">=0.18.1",
     "lodash": ">=4.17.13",
-    "set-value": ">=2.0.1"
+    "set-value": ">=2.0.1",
+    "lodash.template": ">=4.5.0"
   }
 }
